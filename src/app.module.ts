@@ -19,6 +19,7 @@ import {Product} from './products/products.entity';
       database: process.env.DB_NAME,
       entities: [Product], // Importante para que NestJS pueda leer los entidades desde los archivos.js generados
       synchronize: true, // Importante para que NestJS sincronice la base de datos con las entidades
+      logging: false, // Habilita el registro de consultas
     }), ProductsModule, 
   ],
   controllers: [AppController],

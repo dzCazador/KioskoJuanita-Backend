@@ -1,6 +1,6 @@
 import { IsNumber, IsString } from "class-validator";
 
-export class ProductDTOP{
+export class ProductDto{
 
     id: number;
 
